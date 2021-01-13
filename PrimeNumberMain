@@ -1,0 +1,14 @@
+while True:    
+    prime = int(input('Enter a number'))
+    x = list(range(2, prime))
+    list1 = []
+    for nums in x:
+        y = prime%nums
+        list1.append(y)
+    if 0 in list1:
+        print('This number is composite.')
+        for i,j in enumerate(list1):
+            if j == 0:
+                print(prime, ' is divisible by ', i+2)
+    else:
+        print('This number is prime.')
